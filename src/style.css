@@ -60,3 +60,10 @@ li {
   font-size: 16px;
   top: -34px;
 }
+.form {
+  margin-right: 140px;
+}
+
+#Search-input {
+  margin-left: 30px;
+}
