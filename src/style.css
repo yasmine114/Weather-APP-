@@ -3,7 +3,8 @@ body {
   max-width: 100%;
   margin: auto;
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/017/559/original/weather.jpg?1632342299");
-  background-size: cover;
+  background-size:cover;
+  background-repeat: no-repeat;
 }
 
 .weather-app {
