@@ -2,7 +2,7 @@ body {
   font-family: "Merriweather", serif;
   max-width: 100%;
   margin: auto;
-  background-image: url("https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?cs=srgb&dl=pexels-pixabay-158827.jpg&fm=jpg");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/017/559/original/weather.jpg?1632342299");
   background-size: cover;
 }
 
@@ -41,6 +41,7 @@ li {
   max-width: 600px;
   margin: 30px auto;
   opacity: 5;
+ box-shadow: -9px -10px 17px rgba(239, 233, 232, 0.3);
 }
 
 .weather-app {
@@ -65,12 +66,24 @@ li {
 .weather-temperature .units {
   position: relative;
   font-size: 16px;
+  font-weight: 500;
+  position: relative;
   top: -34px;
+  text-decoration: none;
 }
+ .weather-temperature .active {
+   color: black;
+  cursor: default;
+  text-decoration: none;
+ }
+
 .form {
   margin-right: 140px;
 }
 
 #Search-input {
   margin-left: 30px;
+}
+#current-input {
+ margin-left: -30px;
 }
