@@ -43,3 +43,22 @@ li {
   font-weight: 100;
   line-height: 19px;
 }
+#prayer-button {
+  margin-left: 400px;
+}
+
+.weather-temperature strong {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  top: -34px;
+  text-decoration: none;
+}
