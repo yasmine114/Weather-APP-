@@ -142,4 +142,39 @@ currentLocation.addEventListener("click", getLocalForecast);
 let celsiusLink = document.querySelector("#celsius-unit");
 celsiusLink.addEventListener("click", showCelsiusTemperature);
 
-search("Cairo");
+function displayDailyPrayer(name) {
+  var newLine = "\r\n";
+  var msg =
+    "أَصْبَـحْـنا وَأَصْبَـحْ المُـلكُ للَّهِ رَبِّ العـالَمـين ، اللّهُـمَّ إِنِّـي أسْـأَلُـكَ خَـيْرَ هـذا الـيَوْم ، فَـتْحَهُ ، وَنَصْـرَهُ ، وَنـورَهُ وَبَـرَكَتَـهُ ، وَهُـداهُ ، وَأَعـوذُ بِـكَ مِـنْ شَـرِّ ما فـيهِ وَشَـرِّ ما بَعْـدَه";
+  msg += newLine;
+  msg +=
+    "The morning/night has come to me and the whole universe belongs to Allah, the Lord of the worlds, O Allah, I ask of you the good of the day, it's success and aid and it's nur (celestial light) and barakaat (blessings) and seek hidayah (guidance) and seek refuge from the evil in it (this day) and from the evil of that which is to come later";
+  msg += newLine;
+  msg += newLine;
+  msg +=
+    "اللّهُـمَّ بِكَ أَصْـبَحْنا وَبِكَ أَمْسَـينا ، وَبِكَ نَحْـيا وَبِكَ نَمُـوتُ وَإِلَـيْكَ المَصِيْر";
+  msg += newLine;
+  msg +=
+    "O Allah we enter the day time and the evening and die with your Qudrat (power) and to You do we return.";
+  msg += newLine;
+  msg += newLine;
+  msg +=
+    "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ";
+  msg += newLine;
+  msg +=
+    "We have made (started) the morning (and night) in whose Name nothing in the skies and the earth can harm and He is the All-hearing, the All-knowing.";
+  msg += newLine;
+  msg += newLine;
+  msg +=
+    "اللَّهُمَّ مَا أَصْبَحَ بِي مِنْ نِعْمَةٍ أَوْ بِأَحَدٍ مِنْ خَلْقِكَ فَمِنْكَ وَحْدَكَ لَا شَرِيكَ لَكَ فَلَكَ الْحَمْدُ وَلَكَ الشُّكْرُ";
+  msg += newLine;
+  msg +=
+    "O Allah, whatever favours You have bestowed upon me and all other creations is only from you. You are One, You have no partners. Praise and thanks be to You.";
+
+  alert(msg);
+}
+
+let displayButtonPrayer = document.querySelector("#prayer-button");
+displayButtonPrayer.addEventListener("click", displayDailyPrayer);
+
+search("cairo");
