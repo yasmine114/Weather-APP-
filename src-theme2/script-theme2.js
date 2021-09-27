@@ -177,4 +177,4 @@ function displayDailyPrayer(name) {
 let displayButtonPrayer = document.querySelector("#prayer-button");
 displayButtonPrayer.addEventListener("click", displayDailyPrayer);
 
-search("cairo");
+search("Berlin");
